@@ -53,10 +53,10 @@ func (rp *Example) TestPublicFunction()  { // Not Possible
 func (rp *Example) TestPublicFunction() error { // Possible
     ...
 }
-func (rp *Example) testPrivateFunction() int { // Possible
+func (rp *Example) TestPublicFunction() int { // Possible
     ...
 }
-func (rp *Example) testPrivateFunction() (int, error) { // Possible
+func (rp *Example) TestPublicFunction() (int, error) { // Possible
     ...
 }
 func (rp *Example) TestPublicFunction() (int, int, error) { // Not Possible
